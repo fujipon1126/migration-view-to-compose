@@ -1,0 +1,34 @@
+package com.example.migration_view_to_compose.ui.sub1
+
+import android.os.Bundle
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import androidx.fragment.app.Fragment
+import androidx.lifecycle.ViewModelProvider
+import com.example.migration_view_to_compose.R
+import com.example.migration_view_to_compose.databinding.FragmentSub1Binding
+
+class Sub1Fragment : Fragment() {
+
+    companion object {
+        fun newInstance() = Sub1Fragment()
+    }
+
+    private lateinit var viewModel: Sub1ViewModel
+    private lateinit var binding: FragmentSub1Binding
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        viewModel = ViewModelProvider(this)[Sub1ViewModel::class.java]
+        // TODO: Use the ViewModel
+    }
+
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View {
+        binding = FragmentSub1Binding.inflate(inflater, container, false)
+        return binding.root
+    }
+}
