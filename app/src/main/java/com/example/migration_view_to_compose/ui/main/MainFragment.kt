@@ -20,8 +20,9 @@ class MainFragment : Fragment() {
 
     private lateinit var viewModel: MainViewModel
     private lateinit var binding: FragmentMainBinding
-    private val androidx.fragment.app.Fragment.mainActivity: MainActivity?
+    private val Fragment.mainActivity: MainActivity?
         get() = this.activity as? MainActivity
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         viewModel = ViewModelProvider(this)[MainViewModel::class.java]
