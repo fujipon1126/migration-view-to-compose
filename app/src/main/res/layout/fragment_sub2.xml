@@ -6,16 +6,55 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.main.MainFragment">
+    android:layout_margin="8dp"
+    tools:context=".ui.sub2.Sub2Fragment">
 
-    <TextView
-        android:id="@+id/message"
+    <ImageView
+        android:id="@+id/image_plus"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Sub2Fragment"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@android:drawable/btn_plus"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/image_bozuman"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/bozuman"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image_plus" />
+
+    <TextView
+        android:id="@+id/text_bozuman"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="←ボウズマン"
+        android:textColor="@color/teal_200"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/image_bozuman"
+        app:layout_constraintStart_toEndOf="@id/image_bozuman" />
+
+    <SeekBar
+        android:id="@+id/seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="16dp"
+        android:background="@color/purple_200"
+        android:thumb="@android:drawable/btn_minus"
+        app:layout_constraintTop_toBottomOf="@id/image_bozuman" />
+
+    <TextView
+        android:id="@+id/text_seekbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0%"
+        android:textColor="@color/teal_200"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/seekbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
