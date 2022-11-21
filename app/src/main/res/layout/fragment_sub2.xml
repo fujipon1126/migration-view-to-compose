@@ -21,7 +21,7 @@
         android:id="@+id/image_bozuman"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@mipmap/bozuman"
+        android:src="@mipmap/luffy"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/image_plus" />
 
@@ -29,7 +29,7 @@
         android:id="@+id/text_bozuman"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="←ボウズマン"
+        android:text="←モンキー・D・ルフィ"
         android:textColor="@color/teal_200"
         android:textSize="20sp"
         android:textStyle="bold"
