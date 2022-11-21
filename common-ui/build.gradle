@@ -28,6 +28,18 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+
+    // 追加部分--->
+    buildFeatures {
+        compose = true // Compose 機能が有効になる
+    }
+
+    composeOptions {
+        // 以下の互換性を確認して適切なバージョンを指定する
+        // https://developer.android.com/jetpack/androidx/releases/compose-kotlin
+        kotlinCompilerExtensionVersion = "1.3.2"
+    }
+    // <---追加部分
 }
 
 dependencies {
