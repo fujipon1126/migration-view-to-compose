@@ -25,4 +25,8 @@
         android:name="com.example.migration_view_to_compose.ui.sub3.Sub3Fragment"
         tools:layout="@layout/fragment_sub3" />
 
+    <fragment
+        android:id="@+id/sub4_fragment"
+        android:name="com.example.migration_view_to_compose.ui.sub4.Sub4Fragment" />
+
 </navigation>

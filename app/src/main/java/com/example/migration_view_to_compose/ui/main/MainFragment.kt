@@ -48,6 +48,9 @@ class MainFragment : Fragment() {
             sub3Button.setOnClickListener {
                 mainActivity?.navigateTo(R.id.sub3_fragment)
             }
+            sub4Button.setOnClickListener {
+                mainActivity?.navigateTo(R.id.sub4_fragment)
+            }
         }
 
     }
