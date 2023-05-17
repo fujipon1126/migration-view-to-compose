@@ -1,6 +1,16 @@
-// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath(libs.bundles.plugin)
+    }
+}
+
+// apply false で読み込み、Plugin を rootProjectへ適用せずにバージョンを指定。
 plugins {
-    alias(libs.plugins.android.application) apply false
-    alias(libs.plugins.android.library) apply false
+    alias(libs.plugins.buildlogic.android.application.base) apply false
+    alias(libs.plugins.buildlogic.android.library.base) apply false
     alias(libs.plugins.kotlin.android) apply false
 }

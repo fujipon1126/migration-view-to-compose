@@ -1,5 +1,5 @@
 [versions]
-android-gradle-plugin = '7.3.1'
+android-gradle-plugin = '7.4.2'
 kotlin-plugin = '1.7.20'
 
 core-ktx = '1.9.0'
@@ -17,12 +17,18 @@ junit = '4.13.2'
 android-junit = '1.1.4'
 espresso = '3.5.1'
 
+build-logic = "unspecified"
+
 [plugins]
-android-application = { id = "com.android.application", version.ref = "android-gradle-plugin" }
-android-library = { id = "com.android.library", version.ref = "android-gradle-plugin" }
+buildlogic-android-application-base = { id = "build-logic.android.application", version.ref = "build-logic" }
+buildlogic-android-library-base = { id = "build-logic.android.library", version.ref = "build-logic" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin-plugin" }
 
 [libraries]
+# Dependencies of the included build-logic
+android-plugin = { module = "com.android.tools.build:gradle", version.ref = "android-gradle-plugin" }
+kotlin-plugin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin-plugin" }
+
 core-ktx = { module = "androidx.core:core-ktx", version.ref = "core-ktx"}
 appcompat = { module = "androidx.appcompat:appcompat", version.ref = "appcompat" }
 navigation-fragment-ktx = { module = "androidx.navigation:navigation-fragment-ktx", version.ref = "navigation" }
@@ -46,3 +52,4 @@ espresso-core = { module = "androidx.test.espresso:espresso-core", version.ref =
 
 [bundles]
 compose = ["androidx-compose-ui", "androidx-compose-material", "androidx-compose-ui-tooling", "androidx-compose-ui-tooling-preview"]
+plugin = ["android-plugin", "kotlin-plugin"]

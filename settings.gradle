@@ -4,6 +4,7 @@ pluginManagement {
         mavenCentral()
         gradlePluginPortal()
     }
+    includeBuild("build-logic")
 }
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
@@ -15,4 +16,3 @@ dependencyResolutionManagement {
 rootProject.name = "migration-view-to-compose"
 include ':app'
 include ':common-ui'
-include ':build-logic'
