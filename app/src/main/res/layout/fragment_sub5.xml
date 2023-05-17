@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.example.migration_view_to_compose.ui.sub5.CustomEditText
+    <com.example.migrationViewToCompose.ui.sub5.CustomEditText
         android:id="@+id/edit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

@@ -7,31 +7,31 @@
 
     <fragment
         android:id="@+id/main_fragment"
-        android:name="com.example.migration_view_to_compose.ui.main.MainFragment"
+        android:name="com.example.migrationViewToCompose.ui.main.MainFragment"
         tools:layout="@layout/fragment_main" />
 
     <fragment
         android:id="@+id/sub1_fragment"
-        android:name="com.example.migration_view_to_compose.ui.sub1.Sub1Fragment"
+        android:name="com.example.migrationViewToCompose.ui.sub1.Sub1Fragment"
         tools:layout="@layout/fragment_sub1" />
 
     <fragment
         android:id="@+id/sub2_fragment"
-        android:name="com.example.migration_view_to_compose.ui.sub2.Sub2Fragment"
+        android:name="com.example.migrationViewToCompose.ui.sub2.Sub2Fragment"
         tools:layout="@layout/fragment_sub2" />
 
     <fragment
         android:id="@+id/sub3_fragment"
-        android:name="com.example.migration_view_to_compose.ui.sub3.Sub3Fragment"
+        android:name="com.example.migrationViewToCompose.ui.sub3.Sub3Fragment"
         tools:layout="@layout/fragment_sub3" />
 
     <fragment
         android:id="@+id/sub4_fragment"
-        android:name="com.example.migration_view_to_compose.ui.sub4.Sub4Fragment" />
+        android:name="com.example.migrationViewToCompose.ui.sub4.Sub4Fragment" />
 
     <fragment
         android:id="@+id/sub5_fragment"
-        android:name="com.example.migration_view_to_compose.ui.sub5.Sub5Fragment"
+        android:name="com.example.migrationViewToCompose.ui.sub5.Sub5Fragment"
         tools:layout="@layout/fragment_sub5" />
 
 </navigation>

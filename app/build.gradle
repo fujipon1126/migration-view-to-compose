@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace 'com.example.migration_view_to_compose'
+    namespace 'com.example.migrationViewToCompose'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.example.migration_view_to_compose"
+        applicationId "com.example.migrationViewToCompose"
         minSdk 26
         targetSdk 33
         versionCode 1
