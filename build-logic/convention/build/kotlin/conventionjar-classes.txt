@@ -1,1 +1,0 @@
-/Users/s002391/project/migration-view-to-compose/build-logic/convention/build/classes/kotlin/main/com/example/migrationViewToCompose/buildlogic/AndroidApplicationPlugin.class:/Users/s002391/project/migration-view-to-compose/build-logic/convention/build/classes/kotlin/main/com/example/migrationViewToCompose/buildlogic/AndroidLibraryPlugin.class
