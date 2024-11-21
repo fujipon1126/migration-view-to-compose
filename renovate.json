@@ -4,5 +4,14 @@
     "config:recommended",
     ":prHourlyLimitNone",
     ":prConcurrentLimit20"
+  ],
+  "packageRules": [
+    {
+      "description": "Automatically merge minor and patch-level updates",
+      "matchUpdateTypes": ["minor", "patch"],
+      "automerge": true,
+      "automergeType": "pr",
+      "platformAutomerge": true
+    }
   ]
 }
