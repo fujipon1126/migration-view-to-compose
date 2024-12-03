@@ -63,7 +63,7 @@ dependencies {
 
     // 追加部分--->
     // MDC Compose Theme Adapter
-    implementation "com.google.android.material:compose-theme-adapter:1.1.16"
+    implementation "com.google.android.material:compose-theme-adapter:1.2.1"
 
     // Compose BOM
     implementation platform('androidx.compose:compose-bom:2022.12.00')
